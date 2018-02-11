@@ -1,7 +1,9 @@
-package com.example.gersondeveloper.recyclerviewdemo;
+package com.example.gersondeveloper.recyclerviewdemo.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.gersondeveloper.recyclerviewdemo.R;
 
 public class ListActivity extends AppCompatActivity {
 

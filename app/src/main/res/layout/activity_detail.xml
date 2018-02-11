@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lbl_date_and_time_header"
         tools:text="12:00AM 11/02/2018"
-        android:layout_above="@+id/div_center"/>
+        android:layout_above="@+id/div_center" android:padding="16dp"/>
 
     <View
         android:layout_width="match_parent"
@@ -31,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/div_center"
+        android:padding="16dp"
         tools:text="Lorem ipsum dolor sit amet, id justo similique duo, qui no fabulas impedit consetetur. Vocent insolens deserunt cu ius, vocibus antiopam intellegebat no has. No habeo nullam quidam nec, graeco malorum electram ei quo. Stet dicam persius et qui. Ne per feugait expetenda adolescens, malorum vocibus cum ne. No quot dicunt qui. Diam eirmod insolens an nam, ad error cotidieque nam."/>
 
 </RelativeLayout>
