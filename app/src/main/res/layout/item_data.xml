@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:id="@+id/root_list_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imv_list_item_circle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/RED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imv_date_and_time"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imv_list_item_circle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/lbl_message"
+        style="@style/Text.Primary"
+        android:layout_width="254dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imv_date_and_time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="16dp"
+        app:layout_editor_absoluteY="0dp"
+        tools:text="Lorem ipsum dolor sit amet, id justo similique duo, qui no fabulas impedit consetetur. Vocent insolens deserunt cu ius, vocibus antiopam intellegebat no has. No habeo nullam quidam nec, graeco malorum electram ei quo. Stet dicam persius et qui. Ne per feugait expetenda adolescens, malorum vocibus cum ne. No quot dicunt qui. Diam eirmod insolens an nam, ad error cotidieque nam." />
+
+
+    <TextView
+        android:id="@+id/lbl_date_and_time"
+        style="@style/Text.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imv_date_and_time"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_message"
+        app:layout_editor_absoluteX="16dp"
+        app:layout_editor_absoluteY="0dp"
+        tools:text="12:00AM 11/02/2018" />
+
+</android.support.constraint.ConstraintLayout>
