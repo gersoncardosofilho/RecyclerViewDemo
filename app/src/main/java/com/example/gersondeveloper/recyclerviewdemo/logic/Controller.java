@@ -1,6 +1,7 @@
 package com.example.gersondeveloper.recyclerviewdemo.logic;
 
 import com.example.gersondeveloper.recyclerviewdemo.data.DataSourceInterface;
+import com.example.gersondeveloper.recyclerviewdemo.data.ListItem;
 import com.example.gersondeveloper.recyclerviewdemo.view.ViewInterface;
 
 /**
@@ -20,6 +21,16 @@ public class Controller {
 
 
     public void getListFromDataSource() {
+        view.setUpAdapterAndView(
+                dataSource.getListOfData()
+        );
+    }
 
+    public void onListItemClicked(ListItem listItem){
+        view.startDetailActivity(
+        listItem.getDateAndTime(),
+        listItem.getMessage(),
+        listItem.getColorResource()
+        );
     }
 }

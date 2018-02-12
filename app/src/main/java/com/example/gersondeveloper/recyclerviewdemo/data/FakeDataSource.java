@@ -64,7 +64,7 @@ public class FakeDataSource implements DataSourceInterface {
         return listOfData;
     }
 
-    public FakeDataSource(Random random) {
-        this.random = random;
+    public FakeDataSource() {
+
     }
 }
